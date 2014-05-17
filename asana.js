@@ -77,8 +77,7 @@ function asana(c) {
 function worker(counter) {
   addContactAsTask(contacts[counter], function() {
     counter = counter+1;
-    // if(counter < contacts.length) {
-    if(counter < 8) {
+    if(counter < contacts.length) {
       var messageStr = 'Importing contact '+counter+': '+getContactHeadline(contacts[counter]);
       addToLogger(messageStr);
       progressDisplay(counter);
