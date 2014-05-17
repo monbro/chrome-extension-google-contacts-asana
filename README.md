@@ -7,6 +7,8 @@ Import all google contacts as tasks into a asana project
 
 A simple extension to import all your [google contacts](https://www.google.co.uk/contacts/) as tasks into one project of one workspace. The name of the task will be choosen depending on the available information of the contact. To have something to macht afterwards again between both API's, the google contacts id will be stored as the first comment for all tasks.
 
+![Preview](/detail.png?raw=true "Preview")
+
 ## Getting started
 
 1. clone this repo or download it
