@@ -1,4 +1,7 @@
-# Google Chrome Extension
+chrome-extension-google-contacts-asana
+======================================
+
+Import all google contacts as tasks into a asana project
 
 ## Google Contacts to Asana Project Tasks
 
@@ -29,4 +32,3 @@ This extension does not use any custom server, it runs in your browser and will 
 ## Note
 
 * yes, the current codebase of this prototype is a real beauty ;-)
-
