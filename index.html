@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Google Contacts to Asana Project Tasks</title>
+    <link rel="stylesheet" type="text/css" href="sample_support/standard.css">
+    <script src="identity.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="asana.js"></script>
+    <script src="sample_support/sample_support.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Google Contacts to Asana Import</h1>
+      <i>This extension communicates with google and asana api only (no custom server inbetween).</i>
+      <div class="links">
+        Learn more:
+          <a target="_blank" href="http://developer.asana.com/documentation/#api_keys">Get Asana API Key</a>
+          <a target="_blank" href="https://github.com/GoogleChrome/chrome-app-samples/tree/master/identity">Boilerplate source</a>
+          <a target="_blank" href="">Sourcecode</a>
+      </div>
+      <hr>
+    </div>
+    <div class="flows">
+      <h2>1. Step: Asana API properties</h2>
+      <div class="flow">
+        Api Key: <input size="45" id="asana_apikey" value="" /> <span id="apikeyinfo">required!</span><br>
+        <div id="asana_workspaces">
+          Workspaces:
+          <select id="asana_workspace">
+          </select>
+          <span id="asana_workspace_info">please select!</span>
+        </div>
+        <div id="asana_projects">
+          Project:
+          <select id="asana_project">
+          </select>
+          <span id="asana_project_info">please select!</span>
+        </div>
+      </div>
+    </div>
+    <div class="flows">
+      <h2>2. Step: OAuth on Google properties</h2>
+      <div class="flow">
+        <button id="signin">Sign in</button>
+        <button id="revoke" disabled>Revoke token</button>
+      </div>
+    </div>
+
+    <div class="flows">
+      <h2>3. Step: Import Contacts</h2>
+      <div class="flow">
+        <button id="asana_contact_to_tasks" disabled>Import Contacts to Asana</button>
+        <span id="progress"></span>
+      </div>
+    </div>
+   <div class="logger">
+    <textarea id="logger"></textarea>
+   </div>
+  </body>
+</html>
