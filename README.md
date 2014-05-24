@@ -34,3 +34,6 @@ This extension does not use any custom server, it runs in your browser and will 
 ## Note
 
 * yes, the current codebase of this prototype is a real beauty ;-)
+
+To support this project, please consider to [donate](https://www.gittip.com/monbro/).
+
